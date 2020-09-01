@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify
 import praw
 
 reddit = praw.Reddit(client_id="stzfa8KjwNZpzg",
@@ -50,7 +50,6 @@ for i in super_list:
 @app.route('/')
 def hello_world():
     return jsonify(json)
-    # return render_template('index.html', api=json)
 
 
 if __name__ == '__main__':
