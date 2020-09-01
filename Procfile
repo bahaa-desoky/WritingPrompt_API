@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-web: gunicorn app:server
-=======
-web: gunicorn app:server
->>>>>>> origin/master
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:app
